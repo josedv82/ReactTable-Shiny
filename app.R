@@ -5,10 +5,8 @@
 
 #import libraries
 library(reactable)
-library(sparkline)
-library(tidyverse)
 
-#import data
+#import data (not attached to example)
 datos <- read.csv("SO.csv")
 
 
@@ -93,12 +91,7 @@ ui <- fluidPage(
   
   
   #specs for different columns
-  tags$head(tags$style(".row1{font-weight: bold; padding-top: 30px;
-                       width: 60px;
-                       height: 60px;
-                       border-radius: 10%;
-                       color: #000;
-                       font-size: 14px;}")),
+  tags$head(tags$style(".row1{font-weight: bold; padding-top: 30px; width: 60px; height: 60px; border-radius: 10%; color: #000; font-size: 14px;}"))
   tags$head(tags$style(".row2{font-weight: bold; padding-top: 30px;}")),
   tags$head(tags$style(".image{font-weight: bold; padding-top: 0px; padding-bottom: 0px}")),
   tags$head(tags$style(".imageText{font-weight: bold; padding-top: 0px; padding-bottom: 0px}")),
